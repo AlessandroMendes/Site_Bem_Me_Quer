@@ -1,0 +1,117 @@
+/*
+
+	GalleryView - jQuery Content Gallery Plugin
+	Author:		Jack Anderson
+	Version:	3.0 DEVELOPMENT
+
+  	See README.txt for instructions on how to markup your HTML
+*/
+
+// Make sure Object.create is available in the browser (for our prototypal inheritance)
+// Courtesy of Douglas Crockford
+if (typeof Object.create !== 'function') {
+    Object.create = function (o) {
+        function F() {}
+        F.prototype = o;
+        return new F();
+    };
+}
+
+(function ($) {
+	// custom image object
+	var gvImage = function (img) {
+
+		this.src = { 
+			panel: img.attr('src'),
+			frame: img.data('frame') || img.attr('src')
+		};
+		this.scale = {
+			panel: null,
+			frame: null
+		};
+		this.height = 0;
+		this.width = 0;
+		this.attrs = {
+			title: img.attr('title') || img.attr('alt'),
+			description: img.data('description')
+		};
+		this.href = null;
+		this.dom_obj = null;
+		
+		return this;
+	},
+	
+	// utility function wrapper
+	gv = {
+		getInt: function(i) {
+			i = parseInt(i, 10);
+			return isNaN(i) ? 0 : i;
+		},
+		innerWidth: function(elem) {
+			return this.getInt(elem.css('width')) || 0;	
+		},
+		outerWidth: function(elem) {
+			return 	this.innerWidth(elem) + 
+					this.extraWidth(elem);
+		},
+		extraWidth: function(elem) {
+			return	this.getInt(elem.css('paddingLeft')) +
+					this.getInt(elem.css('paddingRight')) +
+					this.getInt(elem.css('borderLeftWidth')) +
+					this.getInt(elem.css('borderRightWidth'));	
+		},
+		innerHeight: function(elem) {
+			return this.getInt(elem.css('height'))|| 0;
+		},
+		outerHeight: function(elem) {
+			return 	this.innerHeight(elem) + 
+					this.extraHeight(elem);
+		},
+		extraHeight: function(elem) {
+			return 	this.getInt(elem.css('paddingTop')) +
+					this.getInt(elem.css('paddingBottom')) +
+					this.getInt(elem.css('borderTopWidth')) +
+					this.getInt(elem.css('borderBottomWidth'));
+		}
+	},
+	
+	/*
+		GalleryView - Object
+			The main gallery class
+	*/		
+	GalleryView = {
+		// array of dom elements
+		elems: [
+			'.gv_galleryWrap',	'.gv_gallery',		'.gv_panelWrap',		'.gv_panel',
+			'img.gv_image',		'.gv_infobar',		'.gv_filmstripWrap',	'.gv_filmstrip',
+			'.gv_frame',		'.gv_thumbnail', 	'.gv_caption', 			'img.gv_thumb',
+			'.gv_navWrap',		'.gv_navNext',		'.gv_navPrev',			'.gv_navPlay',
+			'.gv_panelNavNext',	'.gv_panelNavPrev',	'.gv_overlay',			'.gv_showOverlay',
+			'.gv_imageStore'
+		],
+		
+		// create a jQuery element and apply attributes
+		createElem: function(attrs,elem) {
+			elem = document.createElement(elem);
+			var $elem = $(elem);
+			return $elem.attr(attrs);
+		},
+		
+		// get the position of an element with respect
+		// to the gallery wrapper
+		getPos: function (el) {
+			var self = this,
+				dom = this.dom,
+				el = el[0],
+				el_id = el.id,
+				left = 0,
+				top = 0,
+				gPos, gLeft, gTop;
+				
+			if (!el) { return { top: 0, left: 0 }; }
+			
+			if (el.offsetParent) {
+				do {
+					left += el.offsetLeft;
+					top += el.offsetTop;
+				} while (el = el.offsetPar

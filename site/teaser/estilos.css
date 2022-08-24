@@ -1,0 +1,8 @@
+body {background-image:url("../img/fundo.jpg");background-repeat:repeat; padding:0; margin:0; background-color:#97e0f4;}
+#container {width:1024px; position:relative; margin:0 auto;}
+@font-face {font-family:clemente; src:url("../estrutura/ClementePDai-Regular.ttf");}
+#texto {width:370px; position:relative; margin:0 auto; top:70px;}
+.texto_teaser {font-family:clemente; font-size:24px; color:#fff; border:#0893B9;}
+#logo {width:370px; position:relative; margin:0 auto; margin-top:120px;}
+#texto2 {width:312px; position:relative; margin:0 auto; margin-top:120px;}
+#nosso_site {width:67px; height:20px; position:relative; background:url("../estrutura/nosso_site.png")no-repeat; float:right; margin-top:50px;}

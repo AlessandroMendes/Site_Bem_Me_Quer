@@ -1,0 +1,44 @@
+body {padding:0; background-color:#0893b9;}
+a{font-family: tahoma, sans-serif; color: #95BBAE; font-size: 12px; font-weight: 500;text-decoration: none;}
+a:hover{font-family: tahoma, sans-serif; color: #95BBAE; font-size: 12px; font-weight: 500;font-weight: bolder;}
+#conteiner {margin: 0 auto; padding: 0; width:1024px; height:358px;position:relative;z-index:2;}
+#barralateral {z-index:20; float: left;text-align: center;border: 5px #DDD solid;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width: 95px;position:absolute; background-color: #DDD; box-shadow:1px 7px 32px 2px #141414; margin:0;}
+#barralateral p { margin: 0 0 9px 0;}
+#direita {text-align: center; border: 5px #DDD solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 0 20px 20px 0; margin-left: 115px; width: 88%;box-shadow:1px 7px 32px 2px #141414;  background-color:#ddd;}
+#topo { width:100%px; height:154px; position:relative;z-index:1; }
+#meio {background-color:#fff; width:100%;height:358px; position:relative;z-index:1; }
+#logo {background: url("../img/logo.png") no-repeat; float:left; width:360px; height:110px;position:relative; margin-left:120px; margin-top:113px;}
+#form {width:330px; height:132px; position:relative; margin-left:537px; top:120px; z-index: 3;}
+#rodape {background: url("../estrutura/rodape_login.png") repeat; width:100%px; height:255px; position:relative;z-index: 1;}
+.inputLogin{ width:305px; height:32px; position: absolute; margin-left: 5px; padding-left:10px;}
+.inputEmail{ width:305px; height:32px; position: absolute; margin-left: 5px; padding-left:10px;}
+.inputSenha{background: url("../estrutura/bg_input.png") no-repeat; width:305px; height:32px; position: absolute; margin-left: 5px; margin-top:40px; padding-left:10px;}
+.submit{position:absolute; margin-top: 90px;}
+#marcaForm {border:1px; position:relative; margin-left:10px;}
+#dir_superior {width:100px; position:relative; margin-left:10px;}
+.itens {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify;}
+.itens2 {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify; position:relative; top:35px;}
+.itens3 {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify; position:relative; top:335px; right:15px;}
+.caixa_texto {width:200px;position:relative; margin-left:50px; bottom:80px;}
+.campos_cad {margin-bottom:7px; position:relative;}
+.campos_cad2 {margin-bottom:9px; position:relative;}
+.campos_cad3 {margin-bottom:9px; position:relative; margin-left:20px;}
+.campos_img {position:relative; margin-left:27px;}
+.campos_img2 {position:relative; margin-left:27px; top:35px;}
+.welcome {font-family:Arial, Helvetica, sans-serif; color:#000;}
+.caixa_texto3 {position:relative; width:200px; margin-left:77px; bottom:112px;}
+.caixa_texto5 {position:relative; width:200px; margin-left:77px; bottom:85px;}
+.caixa_texto6 {position:relative; width:200px; margin-left:77px; bottom:55px;}
+.caixa_texto4 {position:relative; width:200px; margin-left:77px; bottom:168px;}
+.caixa_texto2 {position:relative; width:200px; margin-left:50px; bottom:175px;}
+.caixa_texto7 {position:relative; width:200px; margin-left:50px; bottom:82px;}
+.itens_foto {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify; position:relative; top:40px;}
+.itens_data {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify; position:relative; top:40px;}
+legend {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+td {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+label {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+.img_noticia {position:relative; left:110px; width:300px; height:300px;}
+.btn_servico {position:relative; top:50px;}
+.foto {position:relative; top:30px;}
+.lcor{background-color: #767676; font-family:Tahoma; font-size: 10px;}
+.lsemcor{font-family: Tahoma; font-size: 10px;}

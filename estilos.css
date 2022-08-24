@@ -1,0 +1,40 @@
+body {padding:0; background-color:#0893b9;}
+a{font-family: tahoma, sans-serif; color: #95BBAE; font-size: 12px; font-weight: 500;text-decoration: none;}
+a:hover{font-family: tahoma, sans-serif; color: #95BBAE; font-size: 12px; font-weight: 500;font-weight: bolder;}
+#conteiner {margin: 0 auto; padding: 0; width:1024px; height:358px;position:relative;z-index:2;}
+#barralateral {z-index:20; float: left;text-align: center;border: 5px #DDD solid;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;width: 95px;position:fixed; background-color: #DDD; box-shadow:1px 7px 32px 2px #141414; margin:0;}
+#barralateral p { margin: 0 0 9px 0;}
+#direita {text-align: center; border: 5px #DDD solid; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 0 20px 20px 0; margin-left: 115px; width: 88%;box-shadow:1px 7px 32px 2px #141414; height:768px; background-color:#ddd;}
+#topo {background: url("../estrutura/topo_login.png") repeat; width:100%px; height:77px; position:relative;z-index:1; }
+#status {background: none repeat scroll 0 0 #FFCC00; top:-45px; color: #000000; font-size: 18px; left: 0; opacity: 0.9; padding: 10px; position: fixed; width: 100%; z-index: 999;}
+.break {clear: both; display: block;}
+#meio {background-color:#fff; width:100%;height:358px; position:relative;z-index:1; }
+#logo {background: url("../img/logo.PNG") no-repeat; float:left; width:347px; height:108px;position:relative; margin-left:120px; margin-top:118px;}
+#form {width:330px; height:132px; position:relative; margin-left:524px; top:120px; z-index: 3;}
+#rodape {background: url("../estrutura/rodape_login.png") repeat; width:100%px; height:77px; position:relative;z-index: 1;}
+.inputLogin{ width:305px; height:32px; position: absolute; margin-left: 5px; padding-left:10px; border: solid; border-color:#0893b9;  border-radius: 5px;}
+.inputEmail{ width:305px; height:32px; position: absolute; margin-left: 5px; padding-left:10px; border: solid; border-color:#0893b9 ; border-radius: 5px;}
+.inputSenha{ width:305px; height:32px; position: absolute; margin-left: 5px; margin-top:46px; padding-left:10px; border: solid; border-color:#0893b9;  border-radius: 5px;}
+button {top: 100px; position:relative; float:right; margin-right:25px; width:76px; height:25px; background: #0893b9;border: solid; border-color:#0893b9;  border-radius: 5px; padding:2px; color: #fff; font-family: "Agency FB"}
+button:hover {background: #0893b9; padding:2px;}
+#marcaForm {border:1px; position:relative; margin-left:10px;}
+fieldset {position:relative;}
+legend {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676;}
+#dir_superior {width:100px; position:relative; margin-left:10px;}
+.itens {font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#767676; text-align:justify;}
+.caixa_texto {width:200px;position:relative; margin-left:50px; bottom:52px;}
+.campos_cad {margin-bottom:5px;}
+.campo {font-family:Arial, Helvetica, sans-serif; font-size:8px; color:#767676;}
+#listagem {position:relative; width:900px; margin-left:470px; border:1px;}
+.lcor{background-color: #95BBAE; font-family:Tahoma; font-size: 10px;}
+.lsemcor{font-family: Tahoma; font-size: 10px;}
+.ltitulo {font-family:Tahoma;font-size: 10px;font-weight: bold;}
+label {font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#767676;}
+#pesqMarca {position:relative; margin-left:10px; }
+#welcome {position:relative; width: 900px;  margin-left:130px;}
+.welcome {font-family: Arial, Helvetica, sans-serif; font-size:20px; position:relative; color:#767676;}
+.caixa_texto2 {bottom:110px; margin-left:50px; position:relative; width:200px;}
+.caixa_texto3 {bottom:28px; margin-left:100px; position:relative; width:200px;}
+#esqueceuSenha {position:relative; margin-left:455px; margin-top:70px;}
+.esqueceu {font-family:Arial, Helvetica, sans-serif; color:red;}
+.caixa_texto4 {bottom:162px; margin-left:100px; position:relative; width:200px;}
